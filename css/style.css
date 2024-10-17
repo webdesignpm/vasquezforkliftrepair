@@ -1,7 +1,7 @@
 .gradient-background {
   background: linear-gradient(300deg, #40394D, #deb589, #C4613D);
   background-size: 180% 180%;
-  animation: gradient-animation 18s ease infinite;
+  animation: gradient-animation 9s ease infinite;
 }
 
 @keyframes gradient-animation {
@@ -33,4 +33,15 @@
   background-color: #FFC008;
   border-color: #FFC008; /* Optional: Change the border color as well */
   color: white; /* Optional: Change the text color on hover */
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensures it stays on top of other elements */
+  width: 100%; /* Makes sure it covers the full width */
+  transition: top 0.3s;
+}
+
+.gradient-background {
+  padding-top: 0px; /* Adjust the padding to ensure content below the header isn't hidden */
 }
