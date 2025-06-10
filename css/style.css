@@ -56,6 +56,8 @@ header {
   align-items: center;
   padding: 16px;
   background: #222;
+  position: relative;
+  z-index: 1100; /* Higher than header */
 }
 .logo { color: #fff; font-size: 1.5em; }
 .nav-links {
@@ -87,11 +89,14 @@ header {
     background: #222;
     flex-direction: column;
     width: 150px;
+    z-index: 1200; /* Ensures dropdown is above navbar & header */
   }
   .nav-links.active {
     display: flex;
   }
   .hamburger {
     display: flex;
+    z-index: 1300;      /* Ensures hamburger icon is always on top */
+    position: relative; /* Needed for z-index to apply */
   }
 }
