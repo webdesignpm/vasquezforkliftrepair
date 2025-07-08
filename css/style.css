@@ -50,7 +50,7 @@ header {
 .gradient-background {
   padding-top: 0px; /* Adjust the padding to ensure content below the header isn't hidden */
 }
-.navbar {
+/*.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -58,8 +58,8 @@ header {
   background: #222;
   position: relative;
   z-index: 1100; /* Higher than header */
-}
-.logo { color: #fff; font-size: 1.5em; }
+/*}
+/*.logo { color: #fff; font-size: 1.5em; }
 .nav-links {
   display: flex;
   list-style: none;
@@ -80,7 +80,7 @@ header {
 }
 
 /* Mobile styles */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .nav-links {
     display: none;
     position: absolute;
@@ -90,13 +90,12 @@ header {
     flex-direction: column;
     width: 150px;
     z-index: 1200; /* Ensures dropdown is above navbar & header */
-  }
+ /* }
   .nav-links.active {
     display: flex;
   }
   .hamburger {
     display: flex;
     z-index: 1300;      /* Ensures hamburger icon is always on top */
-    position: relative; /* Needed for z-index to apply */
-  }
-}
+    /*position: relative; /* Needed for z-index to apply */
+  
